@@ -1,0 +1,13 @@
+.container_account {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container_image {
+    width: 50%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../assets/fundo-noses.jpeg');
+	background-size: cover;
+	background-position: center;
+}

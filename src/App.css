@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  gap: 2%;
+}
+
+.button_account {
+  cursor: pointer;
 }
 
 .App-logo {
