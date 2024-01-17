@@ -2,13 +2,17 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
-import Account from './pages/account';
+import Connect_account from './pages/login';
+import Register_Account from './pages/register'; 
+import Reset_Password from './pages/reset_password';
 
 function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/account" element={<Account />} />
+      <Route path="/login" element={<Connect_account />} />
+      <Route path="/register" element={<Register_Account />} />
+      <Route path="/reset_password" element={<Reset_Password />} />
       {/* Outras rotas, se houver */}
     </Routes>
   );

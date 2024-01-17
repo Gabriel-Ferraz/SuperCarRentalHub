@@ -1,15 +1,12 @@
 // App.js
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <span>HELLO WORLD!</span>
-      <Link to="/account">
-        <button className='button_account'>Clique aqui para logar!</button>
-      </Link>
+      <Header />
     </div>
   );
 }

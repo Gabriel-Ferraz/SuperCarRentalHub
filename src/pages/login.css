@@ -1,0 +1,5 @@
+.container_login {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}

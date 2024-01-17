@@ -1,0 +1,51 @@
+.cardside_container {
+    width: 50%;
+    padding: 1% 0% 0% 1%;
+}
+
+.container_image {
+    position: relative;
+    width: 100%;
+    height: 96vh;
+    border-radius: 15px;
+    overflow: hidden; /* Certifique-se de que a sobreposição gradient não ultrapasse os limites da div */
+    background-image: url('../../assets/carros-de-luxo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(4, 68, 206, 0.514) 100%);
+}
+
+.texts {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: #fff;
+}
+
+/* Estilo das frases */
+.texts span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.subTitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text_subtitle {
+    font-size: 14px;
+}
