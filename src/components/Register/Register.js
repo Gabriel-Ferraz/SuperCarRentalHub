@@ -11,7 +11,7 @@ function Register() {
   return (
     <div className="register_container">
       <div className='register_form_container'>
-        <h2>Faça login</h2>
+        <h2>Cadastre-se</h2>
         <div className='register_form_content'>
           <span className='title_input'>Login</span>
           <div className='block_input'>

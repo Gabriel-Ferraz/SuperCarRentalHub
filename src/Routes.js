@@ -5,6 +5,7 @@ import App from './App';
 import Connect_account from './pages/login';
 import Register_Account from './pages/register'; 
 import Reset_Password from './pages/reset_password';
+import Home from './pages/home';
 
 function AppRoutes() {
   return (
@@ -13,6 +14,7 @@ function AppRoutes() {
       <Route path="/login" element={<Connect_account />} />
       <Route path="/register" element={<Register_Account />} />
       <Route path="/reset_password" element={<Reset_Password />} />
+      <Route path="/home" element={<Home />} />
       {/* Outras rotas, se houver */}
     </Routes>
   );

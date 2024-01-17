@@ -1,19 +1,40 @@
-import React from 'react';
 import './login.css';
 import padlock from '../../assets/padlock.png';
 import person from '../../assets/person.jpg';
 import google from '../../assets/google-icon.png'
 import { useNavigate } from 'react-router-dom';
-
+import React, { useState } from 'react';
 
 function Login() {
 
-  const navigate  = useNavigate();
+  const navigate = useNavigate();
+
+  // Lista de usuários e senhas;
+  const userList = [
+    { username: 'Andre', password: 'xtreed' },
+    { username: 'Gabriel', password: 'xtreed' },
+  ];
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = () => {
+    // Verifica se as credenciais correspondem a algum usuário na lista
+    const user = userList.find(user => user.username === username && user.password === password);
+
+    if (user) {
+      // Redireciona se as credenciais são válidas
+      navigate('/home'); 
+    } else {
+      // Exibe um aviso se as credenciais não são válidas
+      alert('Usuário ou senha incorretos. Por favor, verifique suas credenciais.');
+    }
+  }
 
   return (
     <div className="login_container">
       <div className='login_form_container'>
-        <h2>Cadastre-se</h2>
+        <h2>Faça Login</h2>
         <div className='login_form_content'>
           <span className='title_input'>Login</span>
           <div className='block_input'>
@@ -21,6 +42,8 @@ function Login() {
             <input
               className='input_styles'
               placeholder='Nome de usuário'
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </div>
         </div>
@@ -32,6 +55,8 @@ function Login() {
               className='input_styles'
               placeholder='Digite sua senha'
               type='password'
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
         </div>
@@ -43,7 +68,7 @@ function Login() {
           <span className='forgot_styles' onClick={() => navigate('/reset_password')}>Esqueceu sua senha?</span>
         </div>
         <div className='send_login_container'>
-          <button className='button_login'>Logar</button>
+          <button className='button_login' onClick={handleLogin}>Logar</button>
           <span className='or'>ou</span>
           <div className='login_google'>
             <img className='image_google' src={google} />
