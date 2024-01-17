@@ -3,6 +3,7 @@ import './home.css';
 import HeaderIn from '../components/HeaderIn/HeaderIn';
 import Modal from '../components/Modal/Modal';
 import { useState } from 'react';
+
 function Home() {
 
     const [isModalOpen, setIsModalOpen] = useState(false);

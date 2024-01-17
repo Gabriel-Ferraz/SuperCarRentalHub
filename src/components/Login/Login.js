@@ -38,7 +38,7 @@ function Login() {
         <div className='login_form_content'>
           <span className='title_input'>Login</span>
           <div className='block_input'>
-            <img className='input_image' src={person} />
+            <img className='input_image' src={person} alt="imagem do input"/>
             <input
               className='input_styles'
               placeholder='Nome de usuário'
@@ -50,7 +50,7 @@ function Login() {
         <div className='login_form_content'>
           <span className='title_input'>Senha</span>
           <div className='block_input'>
-            <img className='input_image' src={padlock} />
+            <img className='input_image' src={padlock} alt="imagem do input"/>
             <input
               className='input_styles'
               placeholder='Digite sua senha'
@@ -71,7 +71,7 @@ function Login() {
           <button className='button_login' onClick={handleLogin}>Logar</button>
           <span className='or'>ou</span>
           <div className='login_google'>
-            <img className='image_google' src={google} />
+            <img className='image_google' src={google} alt="imagem do input"/>
             <span className='text_google'>Logar com Google</span>
           </div>
           <span className='create_account'>Ainda não tem uma conta?<span className='create_account_link'>Criar Conta</span></span>

@@ -2,18 +2,18 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
-import Connect_account from './pages/login';
-import Register_Account from './pages/register'; 
-import Reset_Password from './pages/reset_password';
+import ConnectAccount from './pages/login';
+import RegisterAccount from './pages/register'; 
+import ResetPassword from './pages/reset_password';
 import Home from './pages/home';
 
 function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/login" element={<Connect_account />} />
-      <Route path="/register" element={<Register_Account />} />
-      <Route path="/reset_password" element={<Reset_Password />} />
+      <Route path="/login" element={<ConnectAccount />} />
+      <Route path="/register" element={<RegisterAccount />} />
+      <Route path="/reset_password" element={<ResetPassword />} />
       <Route path="/home" element={<Home />} />
       {/* Outras rotas, se houver */}
     </Routes>

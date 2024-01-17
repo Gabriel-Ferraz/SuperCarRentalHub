@@ -13,7 +13,7 @@ function Reset() {
             <div className='reset_form_content'>
             <span className='title_input'>E-mail</span>
             <div className='block_input'>
-            <img className='input_image' src={email} />
+            <img className='input_image' src={email} alt="imagem do input"/>
             <input
             className='input_styles'
             placeholder='Digite seu email'
