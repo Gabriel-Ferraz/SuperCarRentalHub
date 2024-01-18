@@ -10,6 +10,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 1px solid #03065d; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
   /* Estilo opcional para o conteúdo abaixo do cabeçalho */
@@ -25,12 +27,13 @@
   
   .header_title {
     color: black;
+    cursor: pointer;
   }
 
   .header_buttons {
     display: flex;
     gap: 8px;
-    width: 45%;
+    width: 30%;
     justify-content: center;
   }
 
@@ -40,11 +43,12 @@
     font-size: 13px;
     cursor: pointer;
     width: 100%;
+    padding: 1% 0%;
   }
 
   .buttons_styles:hover {
     border: none;
-    background-color: rgb(7, 192, 23);
+    background-color: rgb(7, 78, 192);
     font-size: 13px;
     font-weight: 600;
     border-radius: 3px;

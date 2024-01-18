@@ -3,14 +3,13 @@ import './banner.css';
 
 function Banner() {
     return (
-            <div className='container_image'>
-                <div className='overlay'></div>
-                <div className='texts'>
-                    <span className='title'>SuperCarsRentalsHub</span>
-                    <span className='subTitle'>Venha Fazer Parte</span>
-                    <span className='text_subtitle'>"Explorando Horizontes: Uma Jornada em Busca de Novos Desafios"</span>
-                </div>
+        <div className='container_banner'>
+            <div className='texts_banner'>
+                <span className='title_banner'>SuperCarsRentalsHub</span>
+                <span className='subTitle_banner'>Venha Fazer Parte</span>
+                <span className='text_subtitle_banner'>Explorando Horizontes em super Máquinas</span>
             </div>
+        </div>
     );
 }
 

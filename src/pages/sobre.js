@@ -1,12 +1,15 @@
 import React from 'react';
 import './sobre.css';
 import SobreN from '../components/Sobre/Sobre';
-
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 function Sobre() {
 
     return (
-        <div className="container_login">
+        <div>
+            <Header />
             <SobreN />
+            <Footer />
         </div>
     );
 }

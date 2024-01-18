@@ -1,19 +1,19 @@
 // App.js
 import React from 'react';
-import './App.css';
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
-import SobreNos from './components/SobreNos/SobreNos';
+import Mission from './components/Mission/Missao';
+import Fleet from './components/Fleet/Fleet';
 import Footer from './components/Footer/Footer';
-import Carrousel from './components/Carrousel/Carrousel';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      < Banner />
-      <SobreNos />
-      <Carrousel />
+      <Banner />
+      <Mission />
+      <Fleet />
       <Footer />
     </div>
   );

@@ -47,7 +47,7 @@
 }
 
 .block_input:focus-within::before {
-    border: 2px solid rgb(18, 197, 18);
+    border: 2px solid rgb(7, 78, 192);
 }
 
 .input_image {
@@ -71,7 +71,7 @@
 }
 
 .select_styles:focus {
-    border: 2px solid rgb(18, 197, 18);
+    border: 2px solid rgb(7, 78, 192);
 }
 
 .send_register_container {
@@ -82,7 +82,7 @@
 
 .button_register {
     color: #FFFFFF;
-    background-color: rgb(18, 197, 18);
+    background-color: rgb(7, 78, 192);
     border: none;
     border-radius: 4px;
     padding: 3% 0%;
@@ -97,7 +97,7 @@
 
 .create_account_link {
     font-size: 12px;
-    color: rgb(18, 197, 18);
+    color: rgb(7, 78, 192);
     text-decoration: underline;
     padding-left: 4px;
     cursor: pointer;
@@ -110,7 +110,7 @@
 
 .terms_links {
     font-size: 12px;
-    color: rgb(18, 197, 18);
+    color: rgb(7, 78, 192);
     text-decoration: underline;
     padding-left: 1px;
     cursor: pointer;

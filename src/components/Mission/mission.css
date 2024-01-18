@@ -1,0 +1,24 @@
+.container_mission {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_mission {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title_mission {
+    font-size: 19px;
+}
+
+.text_mission {
+    text-align: justify;
+}

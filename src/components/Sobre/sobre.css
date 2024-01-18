@@ -1,0 +1,27 @@
+.container_description {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.content_description {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 80%;
+}
+
+.title_texts_description {
+    text-align: center;
+}
+
+.title_description {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.texts_description {
+    font-size: 15px;
+
+}

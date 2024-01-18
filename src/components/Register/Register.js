@@ -3,9 +3,11 @@ import './register.css';
 import padlock from '../../assets/padlock.png';
 import person from '../../assets/person.jpg';
 import email from '../../assets/email.jpg';
-
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
+
+  const navigate = useNavigate();
 
   return (
     <div className="register_container">
@@ -51,8 +53,8 @@ function Register() {
         </div>
         <span className='terms'>Ao selecionar Cadastrar, eu concordo com os <span className='terms_links'>Termos de Serviço</span> e reconheço a <span className='terms_links'>Política de Privacidade</span></span>
         <div className='send_login_container'>
-          <button className='button_register'>Logar</button>
-          <span className='create_account'>Já possui uma conta?<span className='create_account_link'>Ir para login</span></span>
+          <button className='button_register'>Criar Cadastro</button>
+          <span className='create_account'>Já possui uma conta?<span className='create_account_link' onClick={() => navigate('/login')}>Ir para login</span></span>
         </div>
       </div>
       <span className='terms'>Protected by reCAPTCHA and subject to the Google <span className='terms_links'>Privacy Policy</span> and <span className='terms_links'>Terms of Service</span></span>

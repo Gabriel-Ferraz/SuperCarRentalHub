@@ -74,7 +74,7 @@ function Login() {
             <img className='image_google' src={google} alt="imagem do input"/>
             <span className='text_google'>Logar com Google</span>
           </div>
-          <span className='create_account'>Ainda não tem uma conta?<span className='create_account_link'>Criar Conta</span></span>
+          <span className='create_account'>Ainda não tem uma conta?<span className='create_account_link' onClick={() => navigate('/register')}>Criar Conta</span></span>
         </div>
       </div>
       <span className='terms'>Protected by reCAPTCHA and subject to the Google <span className='terms_links'>Privacy Policy</span> and <span className='terms_links'>Terms of Service</span></span>

@@ -1,9 +1,22 @@
 .container_footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    background-color: black;
-    color: #FFFFFF;
+    background-color: rgb(7, 78, 192);
+    color: black;
     text-align: center;
     align-items: center;
+    gap: 8px;
+    border-top: 1px solid #03065d; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title_footer {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 2%;
+}
+
+.texts_footer {
+    font-size: 14px;
 }
