@@ -150,3 +150,19 @@
     padding-left: 1px;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+
+    .login_container {
+        width: 100%;
+    }
+
+    .login_form_container {
+        width: 70%;
+    }
+
+    .terms {
+       padding: 15% 8%;
+    }
+
+}

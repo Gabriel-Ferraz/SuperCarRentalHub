@@ -1,56 +1,76 @@
 .header_container {
-    background-color: #FFFFFF; /* Cor de fundo do cabeçalho */
-    color: #fff; /* Cor do texto do cabeçalho */
-    padding: 10px; /* Espaçamento interno do cabeçalho */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000; /* Certifica-se de que o cabeçalho sobreponha outros elementos */
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 1px solid #03065d; 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Estilo opcional para o conteúdo abaixo do cabeçalho */
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .content {
-    margin-top: 80px; /* Ajuste para garantir que o conteúdo não fique escondido sob o cabeçalho */
-    padding: 20px;
-  }
-  
-  .header_title {
-    color: black;
-    cursor: pointer;
+  background-color: #FFFFFF;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #03065d;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header_title {
+  color: black;
+  cursor: pointer;
+}
+
+.header_buttons {
+  display: flex;
+  gap: 8px;
+  width: 30%;
+  justify-content: center;
+}
+
+.buttons_styles {
+  border: none;
+  background-color: transparent;
+  font-size: 13px;
+  cursor: pointer;
+  width: 100%;
+  padding: 1% 0%;
+}
+
+.buttons_styles:hover {
+  border: none;
+  background-color: rgb(7, 78, 192);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header_container {
+    flex-direction: column;
   }
 
   .header_buttons {
-    display: flex;
-    gap: 8px;
-    width: 30%;
-    justify-content: center;
-  }
-
-  .buttons_styles {
-    border: none;
-    background-color: transparent;
-    font-size: 13px;
-    cursor: pointer;
     width: 100%;
-    padding: 1% 0%;
+    align-items: center;
   }
 
-  .buttons_styles:hover {
-    border: none;
-    background-color: rgb(7, 78, 192);
-    font-size: 13px;
-    font-weight: 600;
-    border-radius: 3px;
-    text-decoration: underline;
+  .header_title {
+    margin-bottom: 10px;
   }
+}
+
+@media (max-width: 500px) {
+  .buttons_styles {
+    margin-bottom: 5px;
+  }
+
+  .header_title {
+    font-size: 18px;
+  }
+}

@@ -4,6 +4,7 @@
     gap: 5px;
     justify-content: center;
     align-items: center;
+    padding: 20px; 
 }
 
 .content_mission {
@@ -21,4 +22,19 @@
 
 .text_mission {
     text-align: justify;
+}
+
+
+@media (max-width: 425px) {
+    .content_mission {
+        width: 90%;
+    }
+
+    .title_mission {
+        font-size: 16px;
+    }
+
+    .text_mission {
+        font-size: 14px;
+    }
 }

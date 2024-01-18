@@ -8,7 +8,6 @@ function Header() {
         { id: 0, text: 'Sobre Nós', link: '/sobre' },
         { id: 2, text: 'Entrar', link: '/login' },
         { id: 3, text: 'Cadastre-se', link: '/register' },
-        // { id: 4, text: 'Contato', link: '' },
     ]
 
     const navigate  = useNavigate();

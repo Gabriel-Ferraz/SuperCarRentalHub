@@ -1,14 +1,3 @@
-.cardside_container {
-    width: 100%;
-    padding: 1% 0% 0% 1%;
-}
-
-.container_images {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
 .container_banner {
     position: relative;
     height: 100vh;
@@ -24,21 +13,69 @@
     display: flex;
     flex-direction: column;
     color: #fff;
-    bottom: 32%;
-    left: 40%;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
     gap: 8px;
 }
 
 .title_banner {
-    font-size: 27px;
+    font-size: 3vw;
     font-weight: 900;
 }
 
 .subTitle_banner {
-    font-size: 23px;
+    font-size: 2.5vw;
     font-weight: 600;
 }
 
 .text_subtitle_banner {
-    font-size: 16px;
+    font-size: 1.5vw;
+}
+
+
+@media (max-width: 768px) {
+    .texts_banner {
+        bottom: 25%;
+    }
+
+    .title_banner {
+        font-size: 4vw;
+    }
+
+    .subTitle_banner {
+        font-size: 3vw;
+    }
+
+    .text_subtitle_banner {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container_banner {
+        position: relative;
+        height: 75vh;
+        overflow: hidden;
+        background-image: url('../../assets/carros-de-luxo.jpg');
+        background-size: auto; 
+    }
+
+    .texts_banner {
+        bottom: 25%;
+    }
+
+    .title_banner {
+        font-size: 4vw;
+    }
+
+    .subTitle_banner {
+        font-size: 3.5vw;
+    }
+
+    .text_subtitle_banner {
+        font-size: 2.5vw;
+    }
 }

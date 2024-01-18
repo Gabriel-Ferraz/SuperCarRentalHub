@@ -8,7 +8,8 @@
     width: 100%;
     height: 96vh;
     border-radius: 15px;
-    overflow: hidden; /* Certifique-se de que a sobreposição gradient não ultrapasse os limites da div */
+    overflow: hidden;
+    /* Certifique-se de que a sobreposição gradient não ultrapasse os limites da div */
     background-image: url('../../assets/carros-de-luxo.jpg');
     background-size: cover;
     background-position: center;
@@ -49,4 +50,12 @@
 
 .text_subtitle {
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .cardside_container {
+        display: none;
+        /* Esconde o cardside */
+    }
+
 }

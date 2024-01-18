@@ -9,6 +9,7 @@
     gap: 8px;
     border-top: 1px solid #03065d; 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px; 
 }
 
 .title_footer {
@@ -19,4 +20,19 @@
 
 .texts_footer {
     font-size: 14px;
+}
+
+
+@media (max-width: 425px) {
+    .container_footer {
+        padding: 10px; 
+    }
+
+    .title_footer {
+        font-size: 14px; 
+    }
+
+    .texts_footer {
+        font-size: 12px; 
+    }
 }
