@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function Header() {
 
     const list_options = [
-        { id: 0, text: 'Sobre Nós', link: '' },
+        { id: 0, text: 'Sobre Nós', link: '/sobre' },
         { id: 1, text: 'Estoque', link: '' },
         { id: 2, text: 'Entrar', link: '/login' },
         { id: 3, text: 'Cadastre-se', link: '/register' },
