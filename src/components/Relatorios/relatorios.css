@@ -1,0 +1,28 @@
+.container_relatorios {
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    height: 200px; 
+    padding: 2% 5% 0% 0%;
+  }
+  
+  .image_construction {
+    width: 20%;
+    border-radius: 8px;
+    position: absolute; 
+    animation: moveLeftAndRight 3s linear infinite alternate;
+  }
+  
+  @keyframes moveLeftAndRight {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100% - 20%); 
+    }
+  }
+  

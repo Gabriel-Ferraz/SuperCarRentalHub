@@ -1,45 +1,44 @@
-  /* Modal.css */
-  .modal {
-    position: fixed;
-    top: 0;
-    left: -250px; /* inicialmente fora da tela */
-    width: 250px;
-    height: 100%;
-    background-color: #222;
-    color: white;
-    transition: left 0.3s ease-in-out;
-  }
-  
-  .modal.open {
-    left: 0;
-  }
-  
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .arrow {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .arrow.up {
-    transform: rotate(-90deg);
-  }
-  
-  .arrow.down {
-    transform: rotate(90deg);
-  }
+.modal {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+  color: white;
+  transition: left 0.3s ease-in-out;
+  border-bottom: 1px solid #03065d;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.content_title {
+  text-align: center;
+  padding-top: 15%;
+}
+
+.title {
+  color: black;
+}
+
+.content_modal {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20%;
+}
+
+.option_buttons {
+  display: flex;
+  align-items: center;
+  padding: 6% 0% 6% 8%;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.option_buttons:hover {
+  background-color: rgb(7, 78, 192);
+  color: #FFFFFF;
+}
+
+.option_buttons img {
+  margin-right: 10px;
+}

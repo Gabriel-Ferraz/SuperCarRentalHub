@@ -1,0 +1,21 @@
+/* home.css */
+
+.container_home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.content_home {
+    display: flex;
+    flex-direction: column;
+    flex: 3; /* Esta div vai ocupar 75% do espaço disponível */
+    padding-left: 20%; /* Adiciona um espaçamento à esquerda igual à largura do Modal */
+    gap: 16px;
+}
+
+.modal {
+    width: 20%; /* Largura do Modal, 25% da tela */
+}
+
+/* Outros estilos conforme necessário */

@@ -1,10 +1,138 @@
-/* Header.css */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-  }
-  
+/* headerin.css */
+.headerin_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: black;
+}
+
+.content_name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 5%;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subtitle_headerin {
+  font-size: 12px;
+  color: grey;
+}
+
+.toggle-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background-color: #ffca28;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.arrow {
+  font-size: 24px;
+  color: #ffca28;
+  transition: transform 0.3s ease-in-out;
+}
+
+.open .arrow {
+  transform: rotate(90deg);
+}
+
+.block_input_headerin {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.block_input_headerin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #dbe5e5;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.block_input_headerin:focus-within::before {
+  border: 2px solid rgb(7, 78, 192);
+}
+
+.input_image_headerin {
+  width: 20px;
+}
+
+.input_styles_headerin {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.container_noti_mess_perfil {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 25%;
+  justify-content: center;
+}
+
+.content_images {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.image_notification {
+  cursor: pointer;
+}
+
+.image_user {
+  width: 30%;
+  border-radius: 25px;
+}
+
+.container_user {
+  display: flex;
+  flex-direction: row;
+  border-left: 1px solid grey;
+  gap: 2%;
+  padding-left: 8%;
+}
+
+.content_user {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  text-align: left;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.username {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.description_user {
+  font-size: 12px;
+  color: grey;
+}

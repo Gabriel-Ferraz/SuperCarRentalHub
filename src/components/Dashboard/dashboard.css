@@ -1,0 +1,240 @@
+/* mainContent.css */
+.container_dashboard {
+    flex-grow: 1;
+    overflow: auto;
+    /* Adicione isso se desejar que o conteúdo role se ultrapassar a altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35% 5% 3% 5%;
+}
+
+.content_banner_dash {
+    background-color: rgba(0, 21, 255, 0.958);
+    padding: 6%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+.container_cards_financial {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    width: 30%;
+    background-color: #FFFFFF;
+    gap: 12px;
+    padding: 1%;
+}
+
+.content_cards_title {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.content_cards_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    border-top: 1px solid rgb(223, 220, 220);
+}
+
+.cards_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.red {
+    color: red;
+}
+
+.purple {
+    color: #714AA5;
+}
+
+.image_grafic {
+    width: 33%;
+    height: 10vh;
+}
+
+.box_search_filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+
+.block_input_dash {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+    width: 40%;
+    align-items: center;
+}
+
+.block_input_dash::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #dbe5e5;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.block_input_dash:focus-within::before {
+    border: 2px solid rgb(7, 78, 192);
+}
+
+.input_image_dash {
+    width: 20px;
+    height: 20px;
+}
+
+.input_styles_dash {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.container_filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    gap: 8px;
+}
+
+.box_filters {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    border: 1px solid #F2F4F7;
+    width: 100%;
+    align-items: center;
+    border-radius: 12px;
+    padding: 2% 0%;
+    cursor: pointer;
+}
+
+.filters_title {
+    font-size: 12px;
+}
+
+.containe_product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box_product {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.box_product_card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 30%;
+    padding: 1%;
+    background-color: #faf7f7;
+    border-radius: 8px;
+}
+
+.box_image_background {
+    position: relative;
+    height: 25vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.box_image_text {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    bottom: 5%;
+    left: 20%;
+    transform: translateX(-50%);
+    text-align: center;
+    gap: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.box_product_title_icon {
+    font-size: 12px;
+}
+
+.content_product_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.content_product_box_title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.box_grade_user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.box_user {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.username_card {
+    color: grey;
+    font-size: 15px;
+}
+
+.box_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.info_content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.info_text {
+    font-size: 13px;
+}
